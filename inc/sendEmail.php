@@ -14,7 +14,7 @@ if($_POST) {
    // Check Name
 	if (strlen($name) < 2) {
 		$error['name'] = "Please enter your name.";
-	}
+	}  
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
 		$error['email'] = "Please enter a valid email address.";
